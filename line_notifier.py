@@ -118,11 +118,10 @@ def main():
         return
     
     # 画像のURL作成
-    # image_rel_path = os.path.relpath(data['image_path'], './')
-    image_url = f"https://github.com/Rioto3/izumigatake-snow/blob/main/data/images/full_screenshot.png?raw=true"
+    image_rel_path = os.path.relpath(data['image_path'], './')
+    image_url = f"https://raw.githubusercontent.com/{github_username}/{github_repo}/{github_branch}/{image_rel_path}"
     
     
-
     
     
     # メッセージ作成
