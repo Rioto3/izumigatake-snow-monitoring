@@ -15,10 +15,10 @@ jobs:
         with:
           ref: main
           
-      - name: Switch to release branch
+      - name: Switch to main branch
         run: |
-          git fetch origin release || git branch release
-          git checkout release
+          git fetch origin main || git branch main
+          git checkout main
           git merge main --no-edit || true
 
       - name: Set up Python
@@ -47,7 +47,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/
           git diff --quiet && git diff --staged --quiet || git commit -m "Update road condition data $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin release
+          git push origin main
 
       - name: Send LINE notification
         env:
@@ -55,7 +55,5 @@ jobs:
           LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_REPO: ${{ github.event.repository.name }}
-          GITHUB_BRANCH: release
+          GITHUB_BRANCH: main
         run: python line_notifier.py
-
-        
