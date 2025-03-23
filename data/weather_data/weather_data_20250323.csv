@@ -1,0 +1,8 @@
+timestamp,original_date_time,temperature,road_temperature,image_path
+"2025-03-23 17:02:10","3月24日 1時58分の気象状況","0.1","0.4","./data/images/road_condition.png"
+"2025-03-23 17:08:25","3月24日 2時4分の気象状況","0.0","0.3","./data/images/road_condition.png"
+"2025-03-23 17:13:39","3月24日 2時10分の気象状況","0.0","0.3","./data/images/road_condition.png"
+"2025-03-23 17:17:39","3月24日 2時14分の気象状況","-0.3","0.2","./data/images/road_condition.png"
+"2025-03-23 17:21:42","3月24日 2時18分の気象状況","-0.4","0.1","./data/images/road_condition.png"
+"2025-03-23 17:31:47","3月24日 2時28分の気象状況","-0.6","-0.1","./data/images/road_condition.png"
+"2025-03-23 17:50:38","3月24日 2時46分の気象状況","-1.0","-0.2","./data/images/road_condition.png"
