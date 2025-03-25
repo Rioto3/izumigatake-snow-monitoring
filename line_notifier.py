@@ -122,15 +122,9 @@ def main():
     image_url = f"https://github.com/Rioto3/izumigatake-snow-monitoring/blob/main/data/images/full_screenshot.png?raw=true"
     
     
-    
-    
-    
-    
     # メッセージ作成
     message = (
-        f"{data['date_time']}\n"
-        f"気温: {data['temperature']}°C\n"
-        f"路面温度: {data['road_temperature']}°C"
+        f"ほれい！雪積もってるか？？"
     )
     
     # メッセージ送信
